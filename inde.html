@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مواقيت الصلاة</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>مواقيت الصلاة</h1>
+
+        <!-- اختيار الدولة والمدينة -->
+        <div class="form">
+
+            <div class="input-group">
+                <label for="country">الدولة</label>
+                <select id="country">
+                    <option value="" disabled selected>اختر الدولة</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="city">المدينة</label>
+                <select id="city" disabled>
+                    <option value="">اختر المدينة</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="btn" type="button">عرض مواقيت الصلاة</button>
+
+        <!-- Loading -->
+        <p id="loading" aria-live="polite">جاري تحميل المواقيت...</p>
+
+        <!-- Error -->
+        <p id="error" aria-live="assertive"></p>
+
+        <!-- المكان والتاريخ -->
+        <div class="info">
+            <h2 id="location">اختر الدولة والمدينة</h2>
+            <p id="date"></p>
+        </div>
+
+        <!-- مواقيت الصلاة -->
+        <div class="prayer-times">
+
+            <div class="prayer">
+                <h3>الفجر</h3>
+                <p id="fajr">00:00</p>
+            </div>
+
+            <div class="prayer">
+                <h3>الشروق</h3>
+                <p id="sunrise">00:00</p>
+            </div>
+
+            <div class="prayer">
+                <h3>الظهر</h3>
+                <p id="dhuhr">00:00</p>
+            </div>
+
+            <div class="prayer">
+                <h3>العصر</h3>
+                <p id="asr">00:00</p>
+            </div>
+
+            <div class="prayer">
+                <h3>المغرب</h3>
+                <p id="maghrib">00:00</p>
+            </div>
+
+            <div class="prayer">
+                <h3>العشاء</h3>
+                <p id="isha">00:00</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
